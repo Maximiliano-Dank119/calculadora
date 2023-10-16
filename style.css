@@ -1,0 +1,71 @@
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-botones-pantallas{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 330px;
+    border: 5px solid black;
+    border-radius: 10%;
+    background: gray;
+}
+
+/* seccion de pantalla */
+.pantalla{
+    padding: 5px;
+    display: flex;
+    height: 50px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+}
+.pantalla p {
+    font-size: 20px;
+    color: white;
+}
+
+
+/* seccion de botones */
+.seccion-botones{
+    padding: 5px;
+    gap: 2px;
+    display: flex;
+    height: 250px;
+    width: 80%;
+    /* border:  solid black; */
+    justify-content: space-between;
+}
+.seccion-numeros{
+    flex: 1;
+    display: grid;
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4,auto);
+}
+.seccion-operador{
+    display: grid;
+    height: 100%;
+    width: 100px;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,auto);
+}
+button{
+    border-radius: 10px;
+}
