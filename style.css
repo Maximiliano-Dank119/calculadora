@@ -1,71 +1,47 @@
-.cuerpo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.calculadora{
-    display: flex;
-    height: 500px;
-    width: 500px;
-    justify-content: center;
-    align-items: center;
-}
-.seccion-botones-pantallas{
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 400px;
-    width: 330px;
-    border: 5px solid black;
-    border-radius: 10%;
-    background: gray;
-}
-
-/* seccion de pantalla */
-.pantalla{
-    padding: 5px;
-    display: flex;
-    height: 50px;
-    width: 80%;
-    margin: 10px;
-    border-radius: 10px;
-    justify-content: right;
-    align-items: center;
-    background-color: black;
-}
-.pantalla p {
-    font-size: 20px;
+*{
     color: white;
 }
-
-
-/* seccion de botones */
-.seccion-botones{
-    padding: 5px;
-    gap: 2px;
+.contenedor {
     display: flex;
-    height: 250px;
-    width: 80%;
-    /* border:  solid black; */
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.seccion-numeros{
-    flex: 1;
+.calculadora{
+    background-color: aqua;
     display: grid;
-    height: auto;
-    width: auto;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5,75px);
+    padding: 15px;
 }
-.seccion-operador{
-    display: grid;
-    height: 100%;
-    width: 100px;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(3,auto);
-}
-button{
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-around;
+    background-color: black;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px rgb(31, 30, 30);
     border-radius: 10px;
+}
+
+button {
+    color: black;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.col-2{
+    grid-column: span 2;
+}
+.display-valor-anterior{
+    font-size: 1.5em;
+}
+.display-valor-actual{
+    font-size: 2em;
 }
